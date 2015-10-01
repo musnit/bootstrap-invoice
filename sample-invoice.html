@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sample Invoice</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
       @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
       body, h1, h2, h3, h4, h5, h6{
@@ -13,32 +14,33 @@
   </head>
   
   <body>
-    <div class="container">
+    <div contenteditable class="container">
       <div class="row">
         <div class="col-xs-6">
           <h1>
-            <a href="https://twitter.com/tahirtaous">
-            <img src="logo.png">
-            Logo here
+            <a href="">
+            <img src="">
             </a>
           </h1>
         </div>
         <div class="col-xs-6 text-right">
           <h1>INVOICE</h1>
-          <h1><small>Invoice #001</small></h1>
+          <h1><small>
+            Invoice #001  <br/>
+            Date: 1 Oct 2015 <br/>
+          </small></h1>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-5">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4>From: <a href="#">Your Name</a></h4>
+              <h4>From: <a href="#">Aidan Musnitzky</a></h4>
             </div>
             <div class="panel-body">
               <p>
-                Address <br>
-                details <br>
-                more <br>
+                Email: musnit@gmail.com <br>
+                Skype: musnit <br>
               </p>
             </div>
           </div>
@@ -81,14 +83,14 @@
         </thead>
         <tbody>
           <tr>
-            <td>Article</td>
-            <td><a href="#">Title of your article here</a></td>
+            <td>Development</td>
+            <td><a href="#">Details of project here</a></td>
             <td class="text-right">-</td>
             <td class="text-right">$200.00</td>
             <td class="text-right">$200.00</td>
           </tr>
           <tr>
-            <td>Template Design</td>
+            <td>Development</td>
             <td><a href="#">Details of project here</a></td>
             <td class="text-right">10</td>
             <td class="text-right">75.00</td>
@@ -96,7 +98,7 @@
           </tr>
           <tr>
             <td>Development</td>
-            <td><a href="#">WordPress Blogging theme</a></td>
+            <td><a href="#">Details of project here</a></td>
             <td class="text-right">5</td>
             <td class="text-right">50.00</td>
             <td class="text-right">$250.00</td>
@@ -109,7 +111,8 @@
             <strong>
             Sub Total : <br>
             TAX : <br>
-            Total : <br>
+            Total : <br><br>
+            Due : <br>
             </strong>
           </p>
         </div>
@@ -117,7 +120,8 @@
           <strong>
           $1200.00 <br>
           N/A <br>
-          $1200.00 <br>
+          $1200.00 <br><br>
+          8 Oct 2015 <br>
           </strong>
         </div>
       </div>
@@ -127,12 +131,17 @@
             <div class="panel-heading">
               <h4>Bank details</h4>
             </div>
-            <div class="panel-body">
-              <p>Your Name</p>
-              <p>Bank Name</p>
-              <p>SWIFT : --------</p>
-              <p>Account Number : --------</p>
-              <p>IBAN : --------</p>
+            <div class="bank-details panel-body">
+              <p><span class="details-field">Name: </span>Aidan Musnitzky</p>
+              <p><span class="details-field">Bank:  </span>Standard Bank of South Africa Limited</p>
+              <p><span class="details-field">Branch name:  </span>Sandton</p>
+              <p><span class="details-field">Branch code:  </span>01 9205 90</p>
+              <p><span class="details-field">SWIFT:  </span>SBZA ZA JJ</p>
+              <p><span class="details-field">Account Number:  </span>422125415</p>
+              <p><span class="details-field">Account Type:  </span>Cheque</p>
+              <p><span class="details-field">EBAN/IBAN/Routing Number:<br/> </span>
+                This is not used in South Africa - use Branch name and Branch code instead
+              </p>
             </div>
           </div>
         </div>
@@ -144,11 +153,10 @@
               </div>
               <div class="panel-body">
                 <p>
-                  Email : you@example.com <br><br>
-                  Mobile : -------- <br> <br>
-                  Twitter : <a href="https://twitter.com/tahirtaous">@TahirTaous</a>
+                  <span class="details-field">Email: </span>musnit@gmail.com <br>
+                  <span class="details-field">Skype: </span>musnit <br> <br>
                 </p>
-                <h4>Payment should be made by Bank Transfer</h4>
+                <h4>Payment should be made by Wire Transfer</h4>
               </div>
             </div>
           </div>
